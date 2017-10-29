@@ -25,3 +25,12 @@ width: 50%;
 #sel1, #sel2{
 	width:50%;
 }
+#dropdown1, #dropdown2{
+	display: none;
+}
+#totalPrice{
+	font-weight: bold;
+	font-size: 20px;
+	padding: 30px;
+	margin: 20px;
+}
