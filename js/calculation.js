@@ -1,4 +1,4 @@
-    var number= new Array();
+    var number= new Array();   
        number[0]=0;
        number[1]=1;
        number[2]=2;
@@ -27,19 +27,22 @@
            }
           
           else {document.getElementById('dropdown1').style.display = '';
+            document.getElementById('totalPrice').innerHTML =
+                                      "Total Price For Keychain is $0";
            
           }
         }
       
         var b = document.getElementById('personalizedkeychains');
         b.onclick = function() {
-          if (b.checked == true) {document.getElementById('dropdown2').style.display = 'inline';}
+          if (b.checked == true) {document.getElementById('dropdown2').style.display = 'inline';
+        }
           else {document.getElementById('dropdown2').style.display = '';
+          document.getElementById('totalPrice').innerHTML =
+                                      "Total Price For Keychain is $0";
           }
         }
       }
-
-         
 
 
       //For the first checkbox   
@@ -50,10 +53,12 @@
           var numberKeychains = theForm.elements["numberkeychains"];
           if(numberKeychains.checked==true)
           {
-              keychainPrice=10;       
-          }   
+              keychainPrice=10;  
+               
+          
           return keychainPrice;    
       }
+    }
 
 
 
@@ -66,11 +71,11 @@
           if(personalizedKeychains.checked==true)
           {
               secondkeychainPrice=20;
+            
               
-          }   
           return secondkeychainPrice;
       }
-      
+      }
      // For the 1st dropdown menu
     function keychainsQuantity()
     {
